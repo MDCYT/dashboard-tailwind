@@ -15,15 +15,17 @@ const Login = async () => {
     }
 
     return (
-        // Create a login form for users to enter their credentials
+        // Create a register form for users to enter their credentials
         <div>
-            <h1>Logeo</h1>
-            <form action="/auth/login" method="GET">
+            <h1>Registro</h1>
+            <form action="/auth/register" method="GET">
                 <input type="text" placeholder="Email" id="email" name="email" />
                 <input type="password" placeholder="Password" id="password" name="password" />
-                <button type="submit" id="submit">Logeate</button>
+                <input type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password" />
+                <button type="submit" id="submit">Registrate</button>
             </form>
-            <p>No tienes una cuenta? <a href="/register">Registrate</a></p>
+
+            <p>Ya tienes una cuenta? <a href="/login">Inicia sesión</a></p>
         </div>
     );
 };

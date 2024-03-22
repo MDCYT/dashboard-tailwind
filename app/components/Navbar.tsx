@@ -21,6 +21,7 @@ const Navbar = async () => {
                 ) : (
                     <div>
                         <a href="/login" className="text-white">Login</a>
+                        <a href="/register" className="text-white px-2">Register</a>
                     </div>
                 )}
             </div>
